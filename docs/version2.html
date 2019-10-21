@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Sharon INF1339 Project 3</title>
+<script>
+    function fibonacci (number) {
+        //if number is 1 or 2  just return 1
+        //otherwise return sum of fibonacci of previous two numbers
+    }
+    function compute_and_display () {
+        //get the value from the input
+        var n = document.getElementById("user_input");
+        
+        //result = fibonacci(input)
+        
+        //display result on the webpage
+        //BUT for now, just display the number that was entered
+        var text = "";
+        text = n.elements[0].value;
+        document.getElementById("output_goes_here").innerHTML = text;
+    }
+</script>
+</head>
+
+<body>
+    <!-- USER INPUTS A NUMBER -->
+    <form id="user_input" action="/action_page.php">
+        Enter a number: <input type="text" name="number" value="1">
+    </form> 
+
+    <!--BUTTON THAT RUNS "compute_and_display()" -->
+    <button type="button" onclick="compute_and_display()">Show me the number!</button>
+
+    <p id="output_goes_here"></p>
+
+</body>
+</html>
+
